@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarManHinhChinh"
+                app:title="Trang chính"
+                app:titleTextColor="#f6f6ee"
+                android:background="#49b984"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+            </android.support.v7.widget.Toolbar>
+            
+            <ViewFlipper
+                android:id="@+id/viewFlipperManHinhChinh"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ViewFlipper>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textColor="#898989"
+                    android:textSize="25sp"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sản phẩm nổi bật" />
+                
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerviewManHinhChinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationviewManHinhChinh"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listviewManHinhChinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

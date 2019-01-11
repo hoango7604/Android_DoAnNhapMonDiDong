@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ChiTietSanphamActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarManHinhThongTin"
+        app:title="Thông tin"
+        app:titleTextColor="#f6f6ee"
+        android:background="#49b984"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:background="@drawable/thongtinbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="#64ffffff"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Thông tin về chúng tôi"
+                            android:textSize="30sp"
+                            android:textColor="#5a5959"
+                            android:textStyle="bold|italic"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/border"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" Đồ án Nhập môn Di động"
+                            android:drawableStart="@drawable/graduate"
+                            android:textSize="23sp"
+                            android:textColor="#5a5959"
+                            android:textStyle="bold|italic"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/border"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" Ngô Đức Hòa - 16520423"
+                            android:drawableStart="@drawable/human"
+                            android:textSize="20sp"
+                            android:textColor="#5a5959"
+                            android:textStyle="bold|italic"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/border"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" Lò Thế Vĩ - 16521421"
+                            android:drawableStart="@drawable/human"
+                            android:textSize="20sp"
+                            android:textColor="#5a5959"
+                            android:textStyle="bold|italic"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/border"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" Đoàn Quang Nhật – 15520577"
+                            android:drawableStart="@drawable/human"
+                            android:textSize="20sp"
+                            android:textColor="#5a5959"
+                            android:textStyle="bold|italic"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/border"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text=" Trường ĐH Công nghệ Thông tin"
+                            android:drawableStart="@drawable/address"
+                            android:textSize="21sp"
+                            android:textColor="#5a5959"
+                            android:textStyle="bold|italic"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/border"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:context=".Activities.ThongTinActivity" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
